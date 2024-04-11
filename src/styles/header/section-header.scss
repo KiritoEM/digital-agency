@@ -1,0 +1,16 @@
+.section-header {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+
+    h2 {
+        color: #fff;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    p {
+        color: #fff;
+        text-align: center;
+    }
+}

@@ -5,7 +5,7 @@ const ChoicesCard = ({ icon, text, title }: IservicesCardData): JSX.Element => {
     <article id="choices-card">
       <div id="choices-card__header">
         <img src={icon} alt="" />
-        <h4>{title}</h4>
+        <h5>{title}</h5>
       </div>
       <div id="choices-card__text">
         <p>{text}</p>

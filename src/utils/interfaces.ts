@@ -29,6 +29,11 @@ interface IservicesCardData {
   text: string;
 }
 
+interface Iheader {
+  title: string;
+  text: string;
+}
+
 export type {
   Ichildren,
   Ititle,
@@ -36,4 +41,5 @@ export type {
   InavData,
   IservicesData,
   IservicesCardData,
+  Iheader,
 };

@@ -9,7 +9,7 @@ const ServicesCard = ({
     <article id="services-card">
       <div id="services-card__header">
         <img src={icon} alt="" />
-        <h4>{title}</h4>
+        <h5>{title}</h5>
         <p>{text}</p>
       </div>
       <div id="services-card__button">

@@ -1,0 +1,7 @@
+#home__testimonials {
+    width: 100%;
+    background-color: $gray;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    @include container;
+}

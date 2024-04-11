@@ -4,6 +4,7 @@ import Choices from "@/components/sections/home/Choices";
 import Companies from "@/components/sections/home/Companies";
 import Hero from "@/components/sections/home/Hero";
 import Services from "@/components/sections/home/Services";
+import Testimonials from "@/components/sections/home/Testimonials";
 import constants from "@/helpers/constants";
 import { Fragment } from "react";
 
@@ -18,6 +19,7 @@ const home = (): JSX.Element => {
           <Companies />
           <Services />
           <Choices />
+          <Testimonials />
         </Layout>
       </section>
     </Fragment>
