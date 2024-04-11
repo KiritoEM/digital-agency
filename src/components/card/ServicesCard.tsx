@@ -7,9 +7,15 @@ const ServicesCard = ({
 }: IservicesCardData): JSX.Element => {
   return (
     <article id="services-card">
-      <img src={icon} alt="" />
-      <h4>{title}</h4>
-      <p>{text}</p>
+      <div id="services-card__header">
+        <img src={icon} alt="" />
+        <h4>{title}</h4>
+        <p>{text}</p>
+      </div>
+      <div id="services-card__button">
+        {" "}
+        <button className="btn">Learn more</button>
+      </div>
     </article>
   );
 };

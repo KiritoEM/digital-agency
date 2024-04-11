@@ -1,18 +1,39 @@
 #services-card {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    justify-content: space-between;
+    padding: 0 2%;
+    height: 24rem;
 
-    img {
-        width: 65px;
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        img {
+            width: 65px;
+        }
+
+        h4 {
+            color: #fff;
+        }
+
+        p {
+            color: #fff;
+            font-size: 15px;
+        }
     }
 
-    h4 {
-        color: #fff;
+    &__button {
+        width: 100%;
+
+        .btn {
+            background-color: $gray03;
+            color: #fff;
+            width: 100%;
+            padding: 10px 0;
+            font-weight: 500;
+        }
     }
 
-    p {
-        color: #fff;
-        font-size: 15px;
-    }
 }

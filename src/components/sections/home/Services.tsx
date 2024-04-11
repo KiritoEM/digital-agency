@@ -1,6 +1,8 @@
 import ServicesCard from "@/components/card/ServicesCard";
+import constants from "@/helpers/constants";
 
 const Services = (): JSX.Element => {
+  const { servicesData } = constants();
   return (
     <section id="home__services">
       <div className="services-container">
@@ -12,10 +14,12 @@ const Services = (): JSX.Element => {
           </p>
         </div>
         <div className="content">
-          <div className="row">
-            <div className="col-4">
-              <ServicesCard />
-            </div>
+          <div className="row gx-5">
+            {servicesData.map((item, index) => (
+              <div className="col-4" key={index}>
+                <ServicesCard {...item} />
+              </div>
+            ))}
           </div>
         </div>
       </div>
