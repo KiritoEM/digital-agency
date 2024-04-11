@@ -1,3 +1,9 @@
+import { ReactNode } from "react";
+
+interface Ichildren {
+  children: ReactNode;
+}
+
 interface Ititle {
   title: string;
 }
@@ -6,4 +12,9 @@ interface Imeta {
   home: string;
 }
 
-export type { Ititle, Imeta };
+interface InavData {
+  url: string;
+  label: string;
+}
+
+export type { Ichildren, Ititle, Imeta, InavData };

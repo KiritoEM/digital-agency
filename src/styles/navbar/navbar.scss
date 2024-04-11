@@ -1,0 +1,55 @@
+#navbar {
+    width: 100%;
+    background-color: $gray;
+    height: 4.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    @include container;
+
+    .logo img {
+        width: 130px;
+    }
+
+    .menu-items {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            align-items: center;
+
+            li {
+                color: #fff;
+                padding-left: 21px;
+                padding-right: 21px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                font-size: 15px;
+            }
+
+            #active {
+                background-color: $gray03;
+                border-radius: $radius;
+            }
+        }
+    }
+
+    .auth-buttons {
+        height: 100%;
+
+        .btn {
+            padding-left: 21px;
+            padding-right: 21px;
+            background-color: $green;
+            color: $gray;
+            height: 100%;
+        }
+    }
+}

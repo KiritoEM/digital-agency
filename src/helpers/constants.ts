@@ -1,9 +1,36 @@
-import { Imeta } from "@/utils/interfaces";
+import { Imeta, InavData } from "@/utils/interfaces";
 
 export default function constants() {
   const metaData: Imeta = {
     home: "Bienvenue sur Digital Agency",
   };
 
-  return { metaData };
+  const navData: InavData[] = [
+    {
+      url: "/",
+      label: "Home",
+    },
+    {
+      url: "",
+      label: "Services",
+    },
+    {
+      url: "",
+      label: "Work",
+    },
+    {
+      url: "",
+      label: "Process",
+    },
+    {
+      url: "",
+      label: "About",
+    },
+    {
+      url: "",
+      label: "Careers",
+    },
+  ];
+
+  return { metaData, navData };
 }
