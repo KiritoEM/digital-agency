@@ -4,7 +4,6 @@ import constants from "@/helpers/constants";
 
 const Testimonials = (): JSX.Element => {
   const { testimonialsData } = constants();
-  console.log(testimonialsData);
   return (
     <section id="home__testimonials">
       <div className="testimonials-container">

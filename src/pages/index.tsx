@@ -2,6 +2,7 @@ import Layout from "@/components/layouts/Layout";
 import MetaTitle from "@/components/MetaTitle";
 import Choices from "@/components/sections/home/Choices";
 import Companies from "@/components/sections/home/Companies";
+import Footer from "@/components/sections/home/Footer";
 import Hero from "@/components/sections/home/Hero";
 import Services from "@/components/sections/home/Services";
 import Testimonials from "@/components/sections/home/Testimonials";
@@ -20,6 +21,7 @@ const home = (): JSX.Element => {
           <Services />
           <Choices />
           <Testimonials />
+          <Footer />
         </Layout>
       </section>
     </Fragment>
