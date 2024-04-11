@@ -4,6 +4,7 @@
     justify-content: space-between;
     padding: 0 2%;
     height: 24rem;
+    flex-wrap: nowrap;
 
     &__header {
         display: flex;
