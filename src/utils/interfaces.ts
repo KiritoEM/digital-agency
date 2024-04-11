@@ -44,6 +44,11 @@ interface Itestimonial {
   };
 }
 
+interface Ilinks {
+  icon: string;
+  label: string;
+}
+
 export type {
   Ichildren,
   Ititle,
@@ -53,4 +58,5 @@ export type {
   IservicesCardData,
   Iheader,
   Itestimonial,
+  Ilinks,
 };

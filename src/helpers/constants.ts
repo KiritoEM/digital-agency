@@ -1,4 +1,5 @@
 import {
+  Ilinks,
   Imeta,
   InavData,
   IservicesData,
@@ -119,5 +120,20 @@ export default function constants() {
     },
   ];
 
-  return { metaData, navData, servicesData, choicesData, testimonialsData };
+  const links: Ilinks[] = [
+    {
+      icon: "/link1.png",
+      label: "hello@squareup.com",
+    },
+    {
+      icon: "/link2.png",
+      label: "+91 91813 23 2309",
+    },
+    {
+      icon: "/link3.png",
+      label: "Somewhere in the World",
+    },
+  ];
+
+  return { metaData, navData, servicesData, choicesData, testimonialsData, links };
 }
