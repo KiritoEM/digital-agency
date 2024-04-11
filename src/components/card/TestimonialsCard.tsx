@@ -1,26 +1,24 @@
-const TestimonialsCard = () => {
+import { Itestimonial } from "@/utils/interfaces";
+
+const TestimonialsCard = ({
+  text,
+  title,
+  author,
+}: Itestimonial): JSX.Element => {
   return (
     <article id="testimonial-card">
-      <h4>
-        SquareUp has been Instrumental in Transforming our Online Presence.{" "}
-      </h4>
-      <p>
-        Their team's expertise in web development and design resulted in a
-        visually stunning and user-friendly e-commerce platform. Our online
-        sales have skyrocketed, and we couldn't be happier.
-      </p>
+      <h4>{title}</h4>
+      <p>{text}</p>
       <div className="author">
         <div className="info">
-          <img src="/Profile.png" alt="" />
+          <img src={author.picture} alt="" />
           <div className="text">
-            <h6>John Smith</h6>
-            <p>CEO of Chic Boutique</p>
+            <h6>{author.name}</h6>
+            <p>{author.job}</p>
           </div>
         </div>
         <div className="button">
-          <button className="btn">
-             open Website
-          </button>
+          <button className="btn">open Website</button>
         </div>
       </div>
     </article>

@@ -80,12 +80,41 @@ export default function constants() {
 
   const testimonialsData: Itestimonial[] = [
     {
-      text: "",
-      title: "",
+      text: "Their team's expertise in web development and design resulted in a visually stunning and user-friendly e-commerce platform. Our online sales have skyrocketed, and we couldn't be happier.",
+      title:
+        "SquareUp has been In strumental in Transforming our Online Presence. ",
       author: {
-        job: "",
-        name: "",
-        picture: "",
+        job: "John Smith",
+        name: "CEO of Chic Boutique",
+        picture: "Profile.png",
+      },
+    },
+    {
+      text: "FitLife Tracker wanted a mobile app that tracked fitness activities and provided personalized workout plans.",
+      title: "Working with SquareUp was a breeze.",
+      author: {
+        job: "John Smith",
+        name: "CEO of Chic Boutique",
+        picture: "Profile1.png",
+      },
+    },
+    {
+      text: "Their attention to detail and commitment to delivering a user-friendly platform was evident throughout the project. The system has streamlined our operations and enhanced our clients' event experiences.",
+      title:
+        "SquareUp developed a comprehensive booking and reservation system for our event management company",
+      author: {
+        job: "Mark Thompson",
+        name: "CEO of EventMasters",
+        picture: "Profile2.png",
+      },
+    },
+    {
+      text: "They delivered an exceptional custom software solution. The system has significantly increased our productivity and reduced manual errors. SquareUp's expertise and professionalism have made them a trusted technology partner.",
+      title: "ProTech Solutions turned to SquareUp to automate our workflow",
+      author: {
+        job: "Laura Adams",
+        name: "COO of ProTech Solutions.",
+        picture: "Profile3.png",
       },
     },
   ];
