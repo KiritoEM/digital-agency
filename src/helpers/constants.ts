@@ -1,4 +1,9 @@
-import { Imeta, InavData, IservicesData } from "@/utils/interfaces";
+import {
+  Imeta,
+  InavData,
+  IservicesData,
+  Itestimonial,
+} from "@/utils/interfaces";
 
 export default function constants() {
   const metaData: Imeta = {
@@ -73,5 +78,17 @@ export default function constants() {
     },
   ];
 
-  return { metaData, navData, servicesData, choicesData };
+  const testimonialsData: Itestimonial[] = [
+    {
+      text: "",
+      title: "",
+      author: {
+        job: "",
+        name: "",
+        picture: "",
+      },
+    },
+  ];
+
+  return { metaData, navData, servicesData, choicesData, testimonialsData };
 }

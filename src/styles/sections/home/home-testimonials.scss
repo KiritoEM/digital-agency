@@ -4,4 +4,12 @@
     overflow: hidden;
     padding-bottom: 2rem;
     @include container;
+
+    .testimonials-container {
+        margin-top: 6rem;
+
+        .content {
+            margin-top: 4rem;
+        }
+    }
 }

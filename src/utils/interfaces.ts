@@ -34,6 +34,16 @@ interface Iheader {
   text: string;
 }
 
+interface Itestimonial {
+  title: string;
+  text: string;
+  author: {
+    picture: string;
+    name: string;
+    job: string;
+  };
+}
+
 export type {
   Ichildren,
   Ititle,
@@ -42,4 +52,5 @@ export type {
   IservicesData,
   IservicesCardData,
   Iheader,
+  Itestimonial,
 };
