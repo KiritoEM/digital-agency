@@ -1,0 +1,16 @@
+#home__hero {
+    width: 100%;
+    height: calc(100vh - 4.7rem);
+    overflow: hidden;
+    background-color: $gray;
+    @include container;
+
+    .abstract-design {
+        position: absolute;
+        bottom: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+}
