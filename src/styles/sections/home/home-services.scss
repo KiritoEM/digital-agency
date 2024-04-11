@@ -1,0 +1,38 @@
+#home__services {
+    width: 100%;
+    overflow: hidden;
+    background-color: $gray;
+    @include container;
+    padding-bottom: 4rem;
+
+    .services-container {
+        margin-top: 5rem;
+        height: 17rem;
+        border-radius: $radius;
+        overflow: hidden;
+        background-image: url("/services-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+
+            h1 {
+                color: #fff;
+                text-align: center;
+                font-weight: 600;
+            }
+
+            p {
+                color: #fff;
+            }
+        }
+    }
+}
