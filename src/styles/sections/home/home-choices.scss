@@ -2,6 +2,7 @@
     width: 100%;
     background-color: $gray;
     overflow: hidden;
+    padding-bottom: 2rem;
     @include container;
 
     .choices-container {
@@ -22,6 +23,10 @@
                 color: #fff;
                 text-align: center;
             }
+        }
+
+        .content {
+            margin-top: 5rem;
         }
     }
 }

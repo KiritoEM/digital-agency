@@ -1,0 +1,28 @@
+#choices-card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: space-between;
+    padding: 0 2%;
+
+    &__header {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+        img {
+            width: 65px;
+        }
+
+        h4 {
+            color: #fff;
+        }
+    }
+
+    &__text {
+        p {
+            color: #fff;
+        }
+    }
+
+}

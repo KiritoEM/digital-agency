@@ -29,7 +29,6 @@ interface IservicesCardData {
   text: string;
 }
 
-
 export type {
   Ichildren,
   Ititle,
