@@ -50,5 +50,28 @@ export default function constants() {
     },
   ];
 
-  return { metaData, navData, servicesData };
+  const choicesData: IservicesData[] = [
+    {
+      icon: "icon-4.png",
+      text: "Our team consists of highly skilled professionals who have a deep understanding of the digital landscape. We stay updated with the latest industry trends and best practices to deliver cutting-edge solutions.",
+      title: "Expertise",
+    },
+    {
+      icon: "icon-5.png",
+      text: "We prioritize our clients and their unique needs. We listen to your ideas, challenges, and goals, and tailor our services to meet your specific requirements. Your success is our success.",
+      title: "Client-Centric Approach",
+    },
+    {
+      icon: "icon-6.png",
+      text: "Our primary focus is on delivering results. We combine creativity and technical expertise to create digital products that drive business growth, enhance user experiences, and provide a competitive advantage.",
+      title: "Results-Driven Solutions",
+    },
+    {
+      icon: "icon-7.png",
+      text: "We value long-term relationships with our clients. We see ourselves as your digital partner, providing ongoing support, maintenance, and updates to ensure your digital products continue to thrive.",
+      title: "Collaborative Partnership",
+    },
+  ];
+
+  return { metaData, navData, servicesData, choicesData };
 }
