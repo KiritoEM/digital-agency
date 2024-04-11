@@ -1,13 +1,13 @@
-import Head from 'next/head';
-import React from 'react';
+import MetaTitle from "@/components/MetaTitle";
+import constants from "@/helpers/constants";
+import { Fragment } from "react";
 
-const home = () : JSX.Element => {
+const home = (): JSX.Element => {
+  const { metaData } = constants();
   return (
-    <Head>
-      <title>
-         
-      </title>
-    </Head>
+    <Fragment>
+      <MetaTitle title={metaData.home} />
+    </Fragment>
   );
 };
 
