@@ -7,8 +7,10 @@ const TestimonialsCard = ({
 }: Itestimonial): JSX.Element => {
   return (
     <article id="testimonial-card">
-      <h4>{title}</h4>
-      <p>{text}</p>
+      <div className="header">
+        <h4>{title}</h4>
+        <p>{text}</p>
+      </div>
       <div className="author">
         <div className="info">
           <img src={author.picture} alt="" />

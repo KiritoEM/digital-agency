@@ -1,15 +1,23 @@
 #testimonial-card {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    justify-content: space-between;
+    height: 17.8rem;
 
-    h4 {
-        color: #D8FF99;
-    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
 
-    p {
-        font-size: 15px;
-        color: #fff;
+        h4 {
+            color: #D8FF99;
+        }
+
+        p {
+            font-size: 15px;
+            color: #fff;
+        }
+
     }
 
     .author {
