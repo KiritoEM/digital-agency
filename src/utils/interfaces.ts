@@ -17,4 +17,8 @@ interface InavData {
   label: string;
 }
 
-export type { Ichildren, Ititle, Imeta, InavData };
+interface IcompaniesLogo {
+  src: string;
+}
+
+export type { Ichildren, Ititle, Imeta, InavData, IcompaniesLogo };

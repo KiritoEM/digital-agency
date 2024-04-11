@@ -1,20 +1,22 @@
 #home__companies {
     width: 100%;
     background-color: $gray;
-    height: 10vh;
     overflow: hidden;
     @include container;
 
     .companies-container {
         background-color: $gray02;
+        border-radius: $radius;
         overflow: hidden;
+        padding: 2.4rem 5%;
         width: 100%;
         display: flex;
         justify-content: center;
 
         .sub-container {
             position: absolute;
-            margin-top: -25px;
+            z-index: 300;
+            margin-top: -65px;
 
             p {
                 color: #fff;
@@ -24,6 +26,16 @@
                 padding: 10px 24px;
                 border-radius: 22px;
                 font-size: 15px;
+            }
+        }
+
+        .companies-logo{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            img{
+                width: 80px;
             }
         }
     }

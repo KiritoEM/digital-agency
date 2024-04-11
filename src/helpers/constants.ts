@@ -1,4 +1,4 @@
-import { Imeta, InavData } from "@/utils/interfaces";
+import { IcompaniesLogo, Imeta, InavData } from "@/utils/interfaces";
 
 export default function constants() {
   const metaData: Imeta = {
@@ -30,6 +30,12 @@ export default function constants() {
       url: "",
       label: "Careers",
     },
+  ];
+
+  const companiesLogo: IcompaniesLogo[] = [
+    {
+        src:""
+    }
   ];
 
   return { metaData, navData };

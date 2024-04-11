@@ -9,7 +9,7 @@ const Navbar = (): JSX.Element => {
     <Fragment>
       <nav id="navbar">
         <div className="logo">
-          <img src="/Logo.png" alt="" />
+          <img src="/logo.png" alt="" />
         </div>
         <div className="menu-items">
           <ul>
