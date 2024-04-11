@@ -1,0 +1,30 @@
+#home__companies {
+    width: 100%;
+    background-color: $gray;
+    height: 10vh;
+    overflow: hidden;
+    @include container;
+
+    .companies-container {
+        background-color: $gray02;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .sub-container {
+            position: absolute;
+            margin-top: -25px;
+
+            p {
+                color: #fff;
+                text-align: center;
+                background-color: $gray;
+                border: 1px solid $gray03;
+                padding: 10px 24px;
+                border-radius: 22px;
+                font-size: 15px;
+            }
+        }
+    }
+}

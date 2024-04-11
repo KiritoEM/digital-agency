@@ -1,6 +1,7 @@
 @import "./sections/home/home-hero.scss";
+@import "./sections/home/home-companies.scss";
 
 #home {
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
