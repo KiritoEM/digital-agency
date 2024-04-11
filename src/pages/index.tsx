@@ -1,5 +1,6 @@
 import Layout from "@/components/layouts/Layout";
 import MetaTitle from "@/components/MetaTitle";
+import Choices from "@/components/sections/home/Choices";
 import Companies from "@/components/sections/home/Companies";
 import Hero from "@/components/sections/home/Hero";
 import Services from "@/components/sections/home/Services";
@@ -16,6 +17,7 @@ const home = (): JSX.Element => {
           <Hero />
           <Companies />
           <Services />
+          <Choices />
         </Layout>
       </section>
     </Fragment>
