@@ -6,7 +6,7 @@
     height: 24rem;
     flex-wrap: nowrap;
 
-    @include screen(small){
+    @include screen(small) {
         height: max-content;
         gap: 25px;
     }
@@ -19,6 +19,10 @@
         img {
             width: 65px;
             @include bounce;
+
+            @include screen(small) {
+                width: 47px;
+            }
         }
 
         h5 {

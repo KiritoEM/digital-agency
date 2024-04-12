@@ -13,6 +13,10 @@
         img {
             width: 65px;
             @include bounce;
+
+            @include screen(small){
+                width: 47px;
+            }
         }
 
         h5 {
