@@ -4,6 +4,12 @@
     justify-content: space-between;
     height: 19rem;
 
+
+    @include screen(small) {
+        height: max-content;
+        gap: 25px;
+    }
+
     .header {
         display: flex;
         flex-direction: column;

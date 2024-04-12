@@ -20,7 +20,7 @@ const Testimonials = (): JSX.Element => {
           <FlipAnimation direction="center">
             <div className="row gx-5 gy-5">
               {testimonialsData.map((item, index) => (
-                <div className="col-6" key={index}>
+                <div className="col-lg-6" key={index}>
                   <TestimonialsCard {...item} />
                 </div>
               ))}

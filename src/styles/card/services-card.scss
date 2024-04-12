@@ -6,6 +6,11 @@
     height: 24rem;
     flex-wrap: nowrap;
 
+    @include screen(small){
+        height: max-content;
+        gap: 25px;
+    }
+
     &__header {
         display: flex;
         flex-direction: column;
