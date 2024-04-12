@@ -3,10 +3,12 @@ import { useRouter } from "next/router";
 import { Fragment } from "react";
 import NavbarResponsive from "./NavbarResponsive";
 import MenuIcon from "./MenuIcon";
+import { useNav } from "@/hooks/useNav";
 
 const Navbar = (): JSX.Element => {
   const { navData } = constants();
   const router = useRouter();
+  const { menuToogle } = useNav();
   return (
     <Fragment>
       <nav id="navbar">
@@ -26,7 +28,7 @@ const Navbar = (): JSX.Element => {
           <button className="btn">Contact us</button>
         </div>
 
-        <MenuIcon />
+        <MenuIcon toogle={menuToogle} />
       </nav>
 
       <NavbarResponsive />

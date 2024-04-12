@@ -10,8 +10,16 @@
     @include container;
     overflow: hidden;
 
+    @include screen(small){
+        height: 5rem;
+    }
+
     .logo img {
         width: 130px;
+
+        @include screen(small){
+            width: 120px;
+        }
     }
 
     .menu-items {

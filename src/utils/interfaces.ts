@@ -54,6 +54,11 @@ interface Ianimation {
   children: ReactNode;
 }
 
+interface InavProps {
+  toogle?: () => void;
+  overlay?: () => boolean;
+}
+
 export type {
   Ichildren,
   Ititle,
@@ -65,4 +70,5 @@ export type {
   Itestimonial,
   Ilinks,
   Ianimation,
+  InavProps
 };

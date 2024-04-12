@@ -1,12 +1,17 @@
 import constants from "@/helpers/constants";
+import { useNav } from "@/hooks/useNav";
 import { useRouter } from "next/router";
 
 const NavbarResponsive = (): JSX.Element => {
   const { navData } = constants();
   const router = useRouter();
+  const { openMenu } = useNav();
   return (
     <nav id="navbar-responsive" className="d-lg-none">
-      <div id="navbar-responsive__container">
+      <div
+        id="navbar-responsive__container"
+        className={openMenu ? "show-menu" : "close-menu"}
+      >
         <div className="menu-items">
           <ul>
             {navData.map((item, index) => (
