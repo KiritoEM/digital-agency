@@ -16,15 +16,15 @@ const Services = (): JSX.Element => {
           />
         </FadeAnimation>
         <div className="content">
-          <FadeAnimation direction="left">
-            <div className="row gx-5">
-              {servicesData.map((item, index) => (
-                <div className="col-4" key={index}>
+          <div className="row gx-5">
+            {servicesData.map((item, index) => (
+              <div className="col-4" key={index}>
+                <FadeAnimation direction="left">
                   <ServicesCard {...item} />
-                </div>
-              ))}
-            </div>
-          </FadeAnimation>
+                </FadeAnimation>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

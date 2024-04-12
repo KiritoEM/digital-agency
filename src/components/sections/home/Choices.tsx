@@ -16,15 +16,15 @@ const Choices = (): JSX.Element => {
           />
         </FadeAnimations>
         <div className="content">
-          <FadeAnimations direction="right">
-            <div className="row gx-5 gy-5">
-              {choicesData.map((item, index) => (
-                <div className="col-6" key={index}>
+          <div className="row gx-5 gy-5">
+            {choicesData.map((item, index) => (
+              <div className="col-6" key={index}>
+                <FadeAnimations direction="right">
                   <ChoicesCard {...item} />
-                </div>
-              ))}
-            </div>
-          </FadeAnimations>
+                </FadeAnimations>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

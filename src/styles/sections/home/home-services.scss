@@ -2,11 +2,10 @@
     width: 100%;
     overflow: hidden;
     background-color: $gray;
-    padding-bottom: 4rem;
     @include container;
 
     .services-container {
-        margin-top: 6rem;
+        margin-top: 5rem;
 
         .header {
             display: flex;

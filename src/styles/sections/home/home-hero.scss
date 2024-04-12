@@ -75,11 +75,23 @@
                 &:first-child {
                     background-color: $gray02;
                     border: 2px solid $gray03;
+
+                    &:hover {
+                        color: $gray;
+                        background-color: $green;
+                    }
                 }
 
                 &:last-child {
                     background-color: $green;
                     color: $gray;
+
+                    &:hover {
+                        border: $green;
+                        color: $green;
+                        background-color: transparent;
+                        border: 1px solid $green;
+                    }
                 }
             }
         }
