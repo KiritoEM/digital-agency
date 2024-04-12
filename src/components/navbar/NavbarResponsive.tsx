@@ -7,7 +7,7 @@ const NavbarResponsive = (): JSX.Element => {
   const router = useRouter();
   const { openMenu } = useNav();
   return (
-    <nav id="navbar-responsive" className="d-lg-none">
+    <nav id="navbar-responsive" className={openMenu ? "" : "disable-nav"}>
       <div
         id="navbar-responsive__container"
         className={openMenu ? "show-menu" : "close-menu"}

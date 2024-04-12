@@ -33,6 +33,12 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
+
+            @include screen(small) {
+                gap: 55px;
+                justify-content: center;
+            }
 
             img {
                 width: 80px;

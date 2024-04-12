@@ -10,13 +10,16 @@ const Hero = (): JSX.Element => {
           </div>
         </FadeAnimation>
         <FadeAnimation direction="bottom">
-          <div className="for-buttons">
+          <div className="for-buttons d-none d-lg-flex">
             <p>
               For <span className="span-active">Startups</span>,{"     "}
               <span className="span-active">Media & Publishers</span>and
               {"     "}
               <span className="span-active">Social Good</span>
             </p>
+          </div>
+          <div className="for-buttons text-center d-lg-none">
+            <p>For Startup Media & Publishersand Social Good</p>
           </div>
         </FadeAnimation>
         <FadeAnimation direction="bottom">

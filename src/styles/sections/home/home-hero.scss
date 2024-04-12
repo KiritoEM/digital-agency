@@ -26,6 +26,10 @@
         z-index: 80;
         gap: 8vh;
 
+        @include screen(small) {
+            gap: 40px;
+        }
+
         .title {
             display: flex;
             justify-content: center;
@@ -36,6 +40,10 @@
                 font-weight: 600;
                 width: 80%;
                 text-align: center;
+
+                @include screen(small) {
+                    font-size: 26px;
+                }
             }
         }
 
