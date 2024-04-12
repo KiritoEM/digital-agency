@@ -12,7 +12,7 @@ const Footer = (): JSX.Element => {
         <div className="footer-items">
           <ul>
             {navData.map((item, index) => (
-              <li>{item.label}</li>
+              <li key={index}>{item.label}</li>
             ))}
           </ul>
         </div>
