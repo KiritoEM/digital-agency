@@ -2,6 +2,7 @@ import constants from "@/helpers/constants";
 import { useRouter } from "next/router";
 import { Fragment } from "react";
 import NavbarResponsive from "./NavbarResponsive";
+import MenuIcon from "./MenuIcon";
 
 const Navbar = (): JSX.Element => {
   const { navData } = constants();
@@ -24,6 +25,8 @@ const Navbar = (): JSX.Element => {
         <div className="auth-buttons d-none d-lg-flex">
           <button className="btn">Contact us</button>
         </div>
+
+        <MenuIcon />
       </nav>
 
       <NavbarResponsive />
