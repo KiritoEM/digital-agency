@@ -1,3 +1,4 @@
+import FadeAnimation from "@/components/animations/FadeAnimations";
 import React from "react";
 
 const Companies = (): JSX.Element => {
@@ -5,11 +6,15 @@ const Companies = (): JSX.Element => {
     <section id="home__companies">
       <div className="companies-container">
         <div className="sub-container">
-          <p>Trusted By 250+ Companies</p>
+          <FadeAnimation direction="top">
+            <p>Trusted By 250+ Companies</p>
+          </FadeAnimation>
         </div>
         <div className="companies-logo">
           {Array.from({ length: 6 }, (_, i) => (
-            <img key={i + 1} src={`Logo${i + 1}.png`} />
+            <FadeAnimation direction="center">
+              <img key={i + 1} src={`Logo${i + 1}.png`} />
+            </FadeAnimation>
           ))}
         </div>
       </div>

@@ -8,7 +8,7 @@ const Choices = (): JSX.Element => {
   return (
     <section id="home__choices">
       <div className="choices-container">
-        <FadeAnimations>
+        <FadeAnimations direction="bottom">
           <Header
             text=" Experience excellence in digital craftsmanship with our team of
             skilled professionals dedicated to delivering exceptional results."
@@ -16,13 +16,15 @@ const Choices = (): JSX.Element => {
           />
         </FadeAnimations>
         <div className="content">
-          <div className="row gx-5 gy-5">
-            {choicesData.map((item, index) => (
-              <div className="col-6" key={index}>
-                <ChoicesCard {...item} />
-              </div>
-            ))}
-          </div>
+          <FadeAnimations direction="right">
+            <div className="row gx-5 gy-5">
+              {choicesData.map((item, index) => (
+                <div className="col-6" key={index}>
+                  <ChoicesCard {...item} />
+                </div>
+              ))}
+            </div>
+          </FadeAnimations>
         </div>
       </div>
     </section>

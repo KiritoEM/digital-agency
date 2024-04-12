@@ -49,6 +49,11 @@ interface Ilinks {
   label: string;
 }
 
+interface Ianimation {
+  direction: string;
+  children: ReactNode;
+}
+
 export type {
   Ichildren,
   Ititle,
@@ -59,4 +64,5 @@ export type {
   Iheader,
   Itestimonial,
   Ilinks,
+  Ianimation,
 };

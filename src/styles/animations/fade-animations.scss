@@ -1,9 +1,69 @@
-.fade {
+.fade-bottom,
+.fade-left,
+.fade-right,
+.fade-top,
+.fade-center {
     opacity: 0;
-    transition: opacity 0.5s ease-in-out !important;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.show {
-    opacity: 1 !important;
-    transition: opacity 0.2s ease-in-out !important;
+.fade-bottom {
+    position: relative;
+    bottom: -40px;
+    transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
+}
+
+.fade-left {
+    position: relative;
+    left: -45px;
+    transition: opacity 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.fade-right {
+    position: relative;
+    right: -40px;
+    transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+}
+
+.fade-top {
+    position: relative;
+    top: -32px;
+    transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+
+.fade-center {
+    transition: opacity 0.2s ease-in-out;
+}
+
+.fade-show__bottom,
+.fade-show__left,
+.fade-show__right,
+.fade-show__top,
+.fade-show__center {
+    opacity: 1;
+    transition: opacity 0.9s ease-in-out;
+}
+
+.fade-show__bottom {
+    bottom: 0;
+    transition: opacity 0.9s ease-in-out, bottom 0.9s ease-in-out;
+}
+
+.fade-show__left {
+    left: 0;
+    transition: opacity 0.9s ease-in-out, left 0.9s ease-in-out;
+}
+
+.fade-show__right {
+    right: 0;
+    transition: opacity 0.9s ease-in-out, right 0.9s ease-in-out;
+}
+
+.fade-show__top {
+    top: 0;
+    transition: opacity 0.9s ease-in-out, top 0.9s ease-in-out;
+}
+
+.fade-show__center {
+    transition: opacity 0.8s ease-in-out;
 }
