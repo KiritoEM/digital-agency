@@ -1,0 +1,73 @@
+#navbar-responsive {
+    padding: 22px;
+    background-color: $gray;
+
+    &__container {
+        width: 100%;
+        background-color: $gray02;
+        display: flex;
+        flex-direction: column;
+        padding: 35px;
+        gap: 40px;
+        border-radius: $radius;
+        overflow: hidden;
+
+
+        .menu-items {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            padding-left: 0;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 22px;
+                width: 100%;
+                align-items: flex-start;
+                margin-left: 0;
+                padding-left: 0;
+
+                li {
+                    color: #fff;
+                    padding-left: 21px;
+                    padding-right: 21px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                    font-weight: 500;
+                    cursor: pointer;
+
+                    &:hover {
+                        @extend #active;
+                    }
+                }
+
+                #active {
+                    color: $green;
+                }
+            }
+        }
+
+        .auth-buttons {
+            height: 100%;
+
+            .btn {
+                padding-left: 21px;
+                padding-right: 21px;
+                background-color: $green;
+                color: $gray;
+                height: 100%;
+                font-weight: 500;
+
+                &:hover {
+                    border: $green;
+                    color: $green;
+                    background-color: transparent;
+                    border: 1px solid $green;
+                }
+            }
+        }
+    }
+}

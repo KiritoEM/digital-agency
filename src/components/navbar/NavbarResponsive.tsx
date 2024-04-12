@@ -1,18 +1,13 @@
 import constants from "@/helpers/constants";
 import { useRouter } from "next/router";
-import { Fragment } from "react";
-import NavbarResponsive from "./NavbarResponsive";
 
-const Navbar = (): JSX.Element => {
+const NavbarResponsive = (): JSX.Element => {
   const { navData } = constants();
   const router = useRouter();
   return (
-    <Fragment>
-      <nav id="navbar">
-        <div className="logo">
-          <img src="/logo.png" alt="" />
-        </div>
-        <div className="menu-items d-none d-lg-flex">
+    <nav id="navbar-responsive" className="d-lg-none">
+      <div id="navbar-responsive__container">
+        <div className="menu-items">
           <ul>
             {navData.map((item, index) => (
               <li key={index} id={router.pathname === item.url ? "active" : ""}>
@@ -21,14 +16,12 @@ const Navbar = (): JSX.Element => {
             ))}
           </ul>
         </div>
-        <div className="auth-buttons d-none d-lg-flex">
+        <div className="auth-buttons">
           <button className="btn">Contact us</button>
         </div>
-      </nav>
-
-      <NavbarResponsive />
-    </Fragment>
+      </div>
+    </nav>
   );
 };
 
-export default Navbar;
+export default NavbarResponsive;
