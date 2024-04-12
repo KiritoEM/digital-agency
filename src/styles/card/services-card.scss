@@ -18,6 +18,7 @@
 
         img {
             width: 65px;
+            @include bounce;
         }
 
         h5 {
