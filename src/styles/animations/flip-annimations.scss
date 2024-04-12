@@ -1,29 +1,11 @@
-.flip-container {
-    perspective: 1000px;
+.flip-center {
+    opacity: 0;
+    transform: rotateX(90deg);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.flip-container:hover .flipper,
-.flip-container:focus .flipper {
-    transform: rotateY(180deg);
-}
-
-.flipper {
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-
-.front,
-.back {
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.front {
-    z-index: 2;
-}
-
-.back {
-    transform: rotateY(180deg);
+.flip-show__center {
+    opacity: 1;
+    transform: rotateX(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }

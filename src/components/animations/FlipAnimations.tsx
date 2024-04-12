@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Ianimation } from "@/utils/interfaces";
 
-const FadeAnimation = ({ children, direction }: Ianimation) => {
+const FlipAnimation = ({ children, direction }: Ianimation) => {
   const [isVisible, setVisible] = useState<boolean>(false);
   const sectionRef = useRef<HTMLElement | any>(null);
 
@@ -32,8 +32,8 @@ const FadeAnimation = ({ children, direction }: Ianimation) => {
   return (
     <div
       ref={sectionRef}
-      className={`fade-${direction} ${
-        isVisible ? `fade-show__${direction}` : ""
+      className={`flip-${direction} ${
+        isVisible ? `flip-show__${direction}` : ""
       }`}
     >
       {children}
@@ -41,4 +41,4 @@ const FadeAnimation = ({ children, direction }: Ianimation) => {
   );
 };
 
-export default FadeAnimation;
+export default FlipAnimation;
