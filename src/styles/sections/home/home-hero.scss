@@ -30,6 +30,10 @@
             gap: 40px;
         }
 
+        @include screen(medium) {
+            gap: 50px;
+        }
+
         .title {
             display: flex;
             justify-content: center;
@@ -43,6 +47,10 @@
 
                 @include screen(small) {
                     font-size: 26px;
+                }
+
+                @include screen(medium) {
+                    font-size: 38px;
                 }
             }
         }

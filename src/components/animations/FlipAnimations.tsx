@@ -14,7 +14,7 @@ const FlipAnimation = ({ children, direction }: Ianimation) => {
         }
       },
       {
-        threshold: 0.3,
+        threshold: 0,
       }
     );
 

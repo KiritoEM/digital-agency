@@ -17,7 +17,7 @@ const Testimonials = (): JSX.Element => {
         </FadeAnimation>
 
         <div className="content">
-          <FlipAnimation direction="center">
+          <FadeAnimation direction="bottom">
             <div className="row gx-5 gy-5">
               {testimonialsData.map((item, index) => (
                 <div className="col-lg-6" key={index}>
@@ -25,7 +25,7 @@ const Testimonials = (): JSX.Element => {
                 </div>
               ))}
             </div>
-          </FlipAnimation>
+          </FadeAnimation>
         </div>
       </div>
     </section>

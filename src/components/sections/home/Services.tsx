@@ -16,9 +16,9 @@ const Services = (): JSX.Element => {
           />
         </FadeAnimation>
         <div className="content">
-          <div className="row gx-5 gy-5 gy-md-2">
+          <div className="row gx-5 gy-5 gy-lg-2 d-flex">
             {servicesData.map((item, index) => (
-              <div className="col-md-4" key={index}>
+              <div className="col-md-6 col-lg-4" key={index}>
                 <FadeAnimation direction="left">
                   <ServicesCard {...item} />
                 </FadeAnimation>
